@@ -1,3 +1,5 @@
+console.log("🔥 INDEX.JS IS RUNNING 🔥");
+
 require("dotenv").config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const express = require("express");
@@ -169,7 +171,4 @@ app.post("/bfhl", async (req, res) => {
     });
   }
 });
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
